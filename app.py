@@ -38,8 +38,6 @@ def addrec():
 			con.rollback()
 			msg = "error in insert operation"
 
-		# finally:
-		# 	return render_template('result.html', msg = msg)
 		con.close()
 	return render_template('result.html')
 
